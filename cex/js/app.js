@@ -641,7 +641,7 @@
     class ScrollWatcher {
         constructor(props) {
             let defaultConfig = {
-                logging: true
+                logging: false
             };
             this.config = Object.assign(defaultConfig, props);
             this.observer;
