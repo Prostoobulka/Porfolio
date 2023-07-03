@@ -1621,6 +1621,63 @@ svg path {
      object-fit: cover;
 }
 
+.testimonials__header {
+  -webkit-transition: opacity 1s ease 0s, -webkit-transform 0.8s ease 0s;
+  transition: opacity 1s ease 0s, -webkit-transform 0.8s ease 0s;
+  -o-transition: transform 0.8s ease 0s, opacity 1s ease 0s;
+  transition: transform 0.8s ease 0s, opacity 1s ease 0s;
+  transition: transform 0.8s ease 0s, opacity 1s ease 0s, -webkit-transform 0.8s ease 0s;
+  -webkit-transform: translate(0, 50%);
+      -ms-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+  opacity: 0;
+}
+
+.testimonials__header._watcher-view {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+.testimonials__item {
+  -webkit-transition: opacity 1s ease 0s, -webkit-transform 0.8s ease 0s;
+  transition: opacity 1s ease 0s, -webkit-transform 0.8s ease 0s;
+  -o-transition: transform 0.8s ease 0s, opacity 1s ease 0s;
+  transition: transform 0.8s ease 0s, opacity 1s ease 0s;
+  transition: transform 0.8s ease 0s, opacity 1s ease 0s, -webkit-transform 0.8s ease 0s;
+  opacity: 0;
+  -webkit-transform: translate(0, 50%);
+      -ms-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+
+.testimonials__item._watcher-view {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
+.testimonials__btn {
+  -webkit-transition: opacity 1s ease 0s, -webkit-transform 0.8s ease 0s;
+  transition: opacity 1s ease 0s, -webkit-transform 0.8s ease 0s;
+  -o-transition: transform 0.8s ease 0s, opacity 1s ease 0s;
+  transition: transform 0.8s ease 0s, opacity 1s ease 0s;
+  transition: transform 0.8s ease 0s, opacity 1s ease 0s, -webkit-transform 0.8s ease 0s;
+  opacity: 0;
+  -webkit-transform: translate(0, 50%);
+      -ms-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+
+.testimonials__btn._watcher-view {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
 .testimonials__container {
   display: -ms-grid;
   display: grid;
@@ -2179,9 +2236,9 @@ svg path {
 
 @media (max-width: 40em) {
   .testimonials__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+            flex: 0 0 100% !important;
   }
 }
 
